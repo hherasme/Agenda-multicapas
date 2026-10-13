@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda de contactos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main class = "contenedor">
+        <h1>Mi agenda de contactos</h1>
+        <p class="descripcion">Guarda y consulta tus datos.</p>
+
+        <section class="tarjeta">
+            <h2>Agregar contactos</h2>
+
+            <form id="formContacto">
+                <div class="campo">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre"
+                        placeholder="Escribe el nombre" required>
+                </div>
+
+                <div class="campo">
+                    <label for="apellido">Apellido</label>
+                    <input type="text" id="apellido"
+                        placeholder="Escribe el apellido" required>
+                </div>
+
+                <div class="campo">
+                    <label for="telefono">Telefono</label>
+                    <input type="text" id="telefono"
+                        placeholder="Escribe el telefono" required>
+                </div>
+
+                <button type="submit">Guardar contacto</button>
+            </form>
+
+            <p id="mensaje" role="status"></p>
+        </section>
+
+        <section class="tarjeta">
+            <h2>Contactos guardados</h2>
+
+            <div class="tabla-contenedor">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Apellido</th>
+                            <th>Telefono</th>
+                        </tr>
+                    </thead>
+                    <tbody id="listaContactos">
+                        <tr>
+                            <td colspan="3">Cargando contactos...</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
