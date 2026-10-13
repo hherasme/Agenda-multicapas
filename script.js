@@ -15,6 +15,7 @@ async function cargarContactos() {
             throw new Error("No se pudieron consultar los contactos.");
         }
         const contactos = await respuesta.json();
+        
 
         mostrarContactos(contactos);
     } catch(error){

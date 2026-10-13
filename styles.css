@@ -78,11 +78,12 @@ button:hover{
 }
 
 .tabla-contenedor{
-    overflow: auto;
+    overflow-x: auto;
 }
 
 table{
     width: 100%;
+    table-layout: fixed;
     border-collapse: collapse;
 }
 
@@ -90,6 +91,7 @@ th, td{
     padding: 13px;
     border-bottom: 1px solid #e2e8f0;
     text-align: left;
+    overflow-wrap: anywhere;
 }
 
 th{
